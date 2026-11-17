@@ -6,39 +6,38 @@
 <title>A Little Birthday Surprise ♡</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(145deg, #fff0f5, #f9d5e5, #fceafa);
+  background: linear-gradient(145deg, #ffe4ec, #ffd1e5);
   font-family: Georgia, serif;
   color: #81516b;
   text-align: center;
-  padding: 45px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 450px;
-  margin: auto;
+  width: 100%;
 }
 
 h1 {
   font-size: 35px;
   color: #c66c98;
-  margin-top: 45px;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
 }
 
 .heart {
   font-size: 55px;
-  margin: 35px 0;
+  margin: 25px;
   animation: beat 1.3s infinite;
 }
 
@@ -53,6 +52,52 @@ button {
   padding: 15px 25px;
   border-radius: 30px;
   font-size: 16px;
-  font-family: Georgia, serif;
   cursor: pointer;
- 
+}
+
+#message {
+  display: none;
+  line-height: 1.9;
+  font-size: 17px;
+  margin-top: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday ♡</h1>
+
+<p class="subtitle">
+A little surprise, made with a little love.
+</p>
+
+<div class="heart">💗</div>
+
+<p>You deserve all the happiness in the world.</p>
+
+<button onclick="showMessage()">Open your surprise 🎀</button>
+
+<div id="message">
+<h2>To someone special ♡</h2>
+<p>
+I hope life treats you gently.<br>
+I hope you find happiness in little things.<br>
+And I hope you never forget how special you are.<br><br>
+Happy Birthday! 🌷
+</p>
+<p>With love, always ♡</p>
+</div>
+
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+}
+</script>
+
+</body>
+</html>
